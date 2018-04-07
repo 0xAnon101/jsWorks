@@ -1,0 +1,49 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>To-do List</title>
+     <link rel="stylesheet" href="styles/style.css" type="text/css" />
+     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
+     <script src="https://use.fontawesome.com/9a63f40e23.js"></script>
+     <!--roboto -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+     <!--font closed-->
+ </head>
+ <body id="body">
+     <header>
+        <nav><p>Currency&nbsp;<i class="fa fa-btc" aria-hidden="true"></i>&nbsp;<span id="texture">Converter</span></p></nav>
+     </header>
+     <main>
+        <div id = "converter-container">
+            <h1><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Matters !</h1>
+            <div id= "child-container">
+                <form>
+                <!--given currency1 in drop down button-->
+                <label for="given-curr1">From</label><select id="given-curr1"></select>
+                <input type="number" id="input-curr" autofocus placeholder="Input currency value..." />
+<br/>
+
+                <!--given currency1 in drop down button-->
+                <label for="given-curr1">To</label><select  id="given-curr2"></select>
+                <input type="number" id="output-curr" disabled/>
+<br/>
+                <button type="button" id="convertbtn">Convert</button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+     </main>
+     <footer>
+       <p>  All copyright &copy; Raju Gautam </p>
+     </footer>
+     <script src="js/index.js" type="text/javascript"></script>
+     </body>
+    </html>
+ 
