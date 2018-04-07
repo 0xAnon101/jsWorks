@@ -1,0 +1,28 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "this is used to scrape hostinger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --progress --config ./webpack.config.js",
+    "start": "cross-env NODE_ENV=production webpack-dev-server --inline  --config ./webpack.config.js --progress"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "cheerio": "^1.0.0-rc.2",
+    "request-promise": "^4.2.2",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "request": "^2.85.0",
+    "webpack-bundle-analyzer": "^2.11.1"
+  }
+}
